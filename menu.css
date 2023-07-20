@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    --background: #121212;
+    --card: #181818;
+    --top: #404040;
+    --bottom: #282828;
+    --primary: #FFFFFF;
+    --secondary: #B3B3B3;
+    --active: #1287b5;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: var(--secondary);
+    user-select: none;
+    visibility: hidden;
+    background-color: transparent;
+}
+* {
+    color: var(--primary);
+}
+.main-wrapper {
+    width: 80vw;
+    height: 75vh;
+    background-color: var(--background);
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 1px 17px 1px #404040; 
+    box-shadow: 0px 1px 17px 1px #404040;
+    display: grid;
+    grid-template-columns: 15vw 65vw;
+}
+.top-grid {
+    display: grid;
+    grid-template-columns: 10% 75%;
+    column-gap: -2%;
+}
+.left-wrapper {
+    background-color: var(--card);
+    height: 75vh;
+    width: 15rem;
+    display: grid;
+    grid-template-rows: 5rem 5rem 5rem 5rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+.row2 {
+    width: 15rem;
+    height: 4rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4rem 10rem;
+}
+.row3 {
+    width: 15rem;
+    height: 4rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4rem 10rem;
+}
+.logo {
+    width: 5.4rem;
+    height: 4rem;
+    margin: 1.5rem auto;
+}
+.logo-text {
+    color: var(--secondary);
+    font-size: 1rem;
+    text-align: center;
+    margin: 1.2rem auto;
+}
+.icon-wrapper {
+    border: 1px solid var(--card);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    -webkit-box-shadow: 0px 1px 17px 1px #272727; 
+    box-shadow: 0px 1px 17px 1px #242424;
+}
+.text {
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    color: var(--primary);
+}
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--primary);
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 0.7rem;
+}
+.row2:hover {
+    cursor: pointer;
+    transition: 0.2s ease;
+    scale: 101%;
+}
+.row2:hover .text{
+    color: var(--secondary);
+}
+.row2:hover svg{
+    fill: var(--secondary);
+}
+.row2:active {
+    scale: 99%;
+}
+.centerme {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75vh;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem;
+    grid-template-rows: 7rem 7rem 7rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 10vw;
+}
+.card2 {
+    background-color: var(--card);
+    width: 15rem;
+    height: 7rem;
+    border-radius: 0.2rem;
+}
+.card2:hover {
+    scale: 101%;
+    cursor: pointer;
+    background-color: var(--active);
+}
+.card2:active {
+    scale: 99%;
+    cursor: pointer;
+    background-color: red;
+}
+.card-text {
+    text-align: center;
+    font-size: 2rem;
+    vertical-align: middle;
+    line-height: 7rem;
+}
+.card-text2 {
+    text-align: center;
+    font-size: 2rem;
+    vertical-align: middle;
+    line-height: 7rem;
+}
+.table {
+    margin-top: 2rem;
+    width: 60vw;
+    margin-left: 1rem;
+}
+.bans-page {
+    width: 65vw;
+    height: 75vh;
+    overflow-y: auto;
+}
+.alert {
+    background-color: var(--card);
+    color: var(--primary);
+}
+.swal-modal {
+    background-color: var(--card);
+}
+.swal-title {
+    color: var(--secondary);
+}
+.swal-text {
+    color: var(--primary);
+}
+.swal-button {
+    background-color: var(--active);
+}
+.swal-button--unban {
+    background-color: var(--active);
+}
+.swal-content__input {
+    background-color: var(--background);
+    color: var(--secondary);
+}
